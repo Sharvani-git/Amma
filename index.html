@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>To My Amma — A Life in Full Bloom</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #C8861A;
+    --gold-light: #E8B454;
+    --cream: #FDF6EC;
+    --parchment: #F5E8D0;
+    --terracotta: #A8421A;
+    --deep: #2A1400;
+    --ink: #4A2E0A;
+    --muted: #7A5C3A;
+    --border: rgba(200,134,26,0.25);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 20px;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+
+  /* ─── DECORATIVE MOTIFS ─── */
+  .lotus-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2.5rem auto;
+    opacity: 0.55;
+  }
+  .lotus-divider::before, .lotus-divider::after {
+    content: '';
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+  }
+  .lotus-divider::after { background: linear-gradient(90deg, var(--gold), transparent); }
+  .lotus-icon { color: var(--gold); font-size: 1.1rem; letter-spacing: 0.3em; }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    background: var(--deep);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 100%, rgba(200,134,26,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 30% at 20% 0%, rgba(168,66,26,0.12) 0%, transparent 60%);
+  }
+  .hero-ornament {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.35em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 40px rgba(200,134,26,0.3);
+    position: relative;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold-light);
+    letter-spacing: 0.08em;
+    max-width: 480px;
+    opacity: 0.9;
+    position: relative;
+  }
+  .hero-badge {
+    margin-top: 3.5rem;
+    border: 1px solid rgba(200,134,26,0.4);
+    padding: 0.75rem 2.5rem;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    position: relative;
+  }
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(232,180,84,0.5);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: scrollHint 2.5s ease-in-out infinite;
+  }
+  .hero-scroll::after { content: '↓'; font-size: 1.2rem; }
+  @keyframes scrollHint { 0%,100%{opacity:0.4;transform:translateX(-50%) translateY(0)} 50%{opacity:0.9;transform:translateX(-50%) translateY(6px)} }
+
+  /* ─── CHAPTER LAYOUT ─── */
+  .chapter {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  .chapter-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .chapter h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--deep);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .chapter h2 em {
+    font-style: italic;
+    color: var(--terracotta);
+  }
+  .chapter p {
+    margin-top: 1.5rem;
+    color: var(--ink);
+  }
+  .chapter p.lead {
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  /* ─── PHOTO FRAME ─── */
+  .photo-frame {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 1.5px solid var(--border);
+    background: var(--parchment);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s, background 0.3s;
+    overflow: hidden;
+  }
+  .photo-frame:hover { border-color: var(--gold); background: #EFE0C0; }
+  .photo-frame::before, .photo-frame::after {
+    content: '';
+    position: absolute;
+    width: 28px; height: 28px;
+    border-color: var(--gold);
+    border-style: solid;
+    opacity: 0.6;
+  }
+  .photo-frame::before { top: 10px; left: 10px; border-width: 1.5px 0 0 1.5px; }
+  .photo-frame::after { bottom: 10px; right: 10px; border-width: 0 1.5px 1.5px 0; }
+  .photo-frame .corner-tr, .photo-frame .corner-bl {
+    position: absolute;
+    width: 28px; height: 28px;
+    border-color: var(--gold);
+    border-style: solid;
+    opacity: 0.6;
+  }
+  .photo-frame .corner-tr { top: 10px; right: 10px; border-width: 1.5px 1.5px 0 0; }
+  .photo-frame .corner-bl { bottom: 10px; left: 10px; border-width: 0 0 1.5px 1.5px; }
+
+  .photo-frame .placeholder-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.35;
+  }
+  .photo-frame .placeholder-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0.7;
+    text-align: center;
+  }
+  .photo-frame .photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: rgba(42,20,0,0.65);
+    color: var(--parchment);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .photo-frame:hover .photo-caption { opacity: 1; }
+  .photo-frame img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  .photo-frame.has-photo img { display: block; }
+  .photo-frame.has-photo .placeholder-icon,
+  .photo-frame.has-photo .placeholder-text { display: none; }
+  input[type="file"].photo-upload { display: none; }
+
+  /* Photo frame sizes */
+  .photo-frame.portrait { aspect-ratio: 3/4; max-width: 340px; margin: 2.5rem auto; }
+  .photo-frame.square { aspect-ratio: 1; max-width: 380px; margin: 2.5rem auto; }
+  .photo-frame.wide { aspect-ratio: 16/9; }
+
+  /* ─── PULL QUOTE ─── */
+  .pull-quote {
+    border-left: 3px solid var(--gold);
+    margin: 3rem 0;
+    padding: 1.5rem 2rem;
+    background: rgba(200,134,26,0.06);
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    font-style: italic;
+    color: var(--deep);
+    margin-top: 0 !important;
+    line-height: 1.55;
+  }
+  .pull-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  /* ─── DARK CHAPTER ─── */
+  .chapter-dark {
+    background: var(--deep);
+    color: var(--parchment);
+    padding: 6rem 2rem;
+  }
+  .chapter-dark-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .chapter-dark .chapter-label { color: var(--gold-light); opacity: 0.7; }
+  .chapter-dark h2 { color: var(--cream); }
+  .chapter-dark h2 em { color: var(--gold-light); }
+  .chapter-dark p { color: rgba(253,246,236,0.85); }
+  .chapter-dark p.lead { color: rgba(232,180,84,0.75); }
+  .chapter-dark .pull-quote {
+    border-left-color: var(--gold-light);
+    background: rgba(200,134,26,0.1);
+  }
+  .chapter-dark .pull-quote p { color: var(--cream); }
+
+  /* ─── MILESTONE STRIP ─── */
+  .milestone-strip {
+    background: var(--parchment);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 3.5rem 2rem;
+  }
+  .milestones {
+    max-width: 780px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+  }
+  .milestone {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .milestone-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+  .milestone-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--deep);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .milestone-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  /* ─── PHOTO GRID ─── */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2.5rem 0;
+  }
+  .photo-grid .photo-frame { margin: 0; }
+
+  /* ─── CLOSING LETTER ─── */
+  .closing {
+    background: var(--deep);
+    padding: 7rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200,134,26,0.12) 0%, transparent 70%);
+  }
+  .closing-inner { max-width: 640px; margin: 0 auto; position: relative; }
+  .closing .salutation {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.7;
+    margin-bottom: 2rem;
+  }
+  .closing h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 2.5rem;
+  }
+  .closing .letter-body {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.15rem;
+    color: rgba(253,246,236,0.82);
+    line-height: 1.9;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+  .closing .sign-off {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--gold-light);
+    margin-top: 2rem;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #180A00;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: rgba(200,134,26,0.4);
+    text-transform: uppercase;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 600px) {
+    .chapter { padding: 4rem 1.25rem; }
+    .photo-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: clamp(3.5rem, 15vw, 6rem); }
+    .chapter h2 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+<section class="hero">
+  <p class="hero-ornament">A Mother's Day Tribute · With All My Love</p>
+  <h1>Amma</h1>
+  <p class="hero-sub">A life of quiet courage, radiant beauty, and love that never ran out.</p>
+  <div class="hero-badge">Her Story · Her Strength · Her Light</div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 1 · THE GIRL FROM THE SMALL TOWN
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter One</span>
+  <h2>The Girl From <em>the Small Town</em></h2>
+  <p class="lead">She grew up ordinary in a world that didn't yet know how extraordinary she was.</p>
+  <p>In a small town in India, in a home full of brothers and the sounds of everyday life, she arrived quietly into the world. She was not the loudest, not the one who demanded the most space — she was the girl who watched and learned, who felt deeply, who carried a warmth that would take years for the world to truly recognize.</p>
+
+  <div class="photo-frame portrait" onclick="triggerUpload(this)">
+    <div class="corner-tr"></div><div class="corner-bl"></div>
+    <div class="placeholder-icon">🌸</div>
+    <div class="placeholder-text">Add a childhood photo here</div>
+    <div class="photo-caption">Her — when the whole world was still ahead</div>
+    <img alt="Childhood photo"/>
+    <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+  </div>
+
+  <p>Four brothers, a small town, simple means — and yet she never felt small inside. She was tender and strong in the same breath, a girl who carried dreams quietly, the way all extraordinary people do before the world catches up to them.</p>
+</article>
+
+<div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 2 · THE DARK DAYS
+═══════════════════════════════════════════════════════ -->
+<section class="chapter-dark fade-in">
+  <div class="chapter-dark-inner">
+    <span class="chapter-label">Chapter Two</span>
+    <h2>The Dark Days — and the <em>Light That Found Her</em></h2>
+    <p class="lead">They said words meant to wound. They did not know who they were speaking to.</p>
+
+    <div class="photo-frame wide" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">🕯️</div>
+      <div class="placeholder-text">A quiet, reflective photo of her</div>
+      <div class="photo-caption">In her silence, she was already stronger than they knew</div>
+      <img alt="Reflective photo"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+
+    <p>When the time came for marriage proposals, the neighbours — small minds in a small town — decided her skin tone was the loudest thing about her. They said she was "too dark." They said she would struggle. They turned her beauty into a wound. And for a time, she believed them.</p>
+
+    <div class="pull-quote">
+      <p>"She went quiet. That is what cruelty does — it doesn't just hurt you, it makes you doubt the mirror."</p>
+    </div>
+
+    <p>She fell into a sadness that only those who have been told they are not enough can understand. But she did not stay there. She never stayed anywhere that didn't deserve her.</p>
+
+    <p>She went to the city. And the city saw her differently. Neighbours there — people who had breathed wider air — looked at her and said simply: <em>"You are beautiful."</em> And they meant it. No footnote. No qualification. Just the truth.</p>
+
+    <p>The depression lifted. Not all at once, but it lifted — like fog when the sun insists on itself.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 3 · THE PHOTO STUDIO
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter Three</span>
+  <h2>The Day She <em>Saw Herself</em></h2>
+  <p class="lead">A stranger with a camera told her what a hundred people had failed to say.</p>
+  <p>One afternoon in the city, she walked into a photography studio. An ordinary day, an ordinary street. She sat before the lens, perhaps still carrying the echoes of unkind words.</p>
+
+  <div class="photo-frame portrait" onclick="triggerUpload(this)">
+    <div class="corner-tr"></div><div class="corner-bl"></div>
+    <div class="placeholder-icon">📷</div>
+    <div class="placeholder-text">Add her "heroine" photo — or one just like it</div>
+    <div class="photo-caption">The photograph that knew her truth before she did</div>
+    <img alt="Studio photo"/>
+    <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+  </div>
+
+  <p>The photographer developed the pictures and looked at them. Then he did something she did not expect: he <strong>framed her photographs and placed them in his studio window</strong>. A display of beauty. Of someone worth showing to the world.</p>
+
+  <div class="pull-quote">
+    <p>"He kept her pictures because she looked like a heroine. Because she did."</p>
+    <cite>— as remembered by her daughter</cite>
+  </div>
+
+  <p>In that moment, something shifted inside her. Not because a stranger validated her — but because she finally had permission to see what had always been true. The girl from the small town was, and had always been, radiant.</p>
+
+  <p>She came home different. Unshakeable. The neighbours could say what they wanted now. She had seen herself — really seen herself — and that knowledge was hers to keep.</p>
+</article>
+
+<div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 4 · LOVE FINDS HER
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter Four</span>
+  <h2>The Man Who <em>Never Saw Her Color</em></h2>
+  <p class="lead">He looked at her and saw everything that mattered.</p>
+
+  <div class="photo-grid">
+    <div class="photo-frame" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">💛</div>
+      <div class="placeholder-text">Wedding day photo</div>
+      <div class="photo-caption">The beginning of everything</div>
+      <img alt="Wedding photo"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+    <div class="photo-frame" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">🌺</div>
+      <div class="placeholder-text">A photo of them together</div>
+      <div class="photo-caption">Two people, one life</div>
+      <img alt="Couple photo"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+  </div>
+
+  <p>When the arranged marriage proposal arrived, he came with bright, fair skin and steady eyes. He saw her and liked her. Immediately. First sight.</p>
+
+  <p>Years later, she asked him gently — half teasing, half needing to know — why he had chosen her, knowing what the world had said about her complexion.</p>
+
+  <div class="pull-quote">
+    <p>"I never felt, not once, that you were dark. Colour has never mattered to me. Only the person. Only the heart inside."</p>
+    <cite>— Her husband, her love</cite>
+  </div>
+
+  <p>And that was that. The neighbours' voices became smaller. The old wound, at last, closed over and became scar tissue — something that marks you without hurting you anymore.</p>
+</article>
+
+<!-- ═══════════════════════════════════════════════════════
+     MILESTONE STRIP
+═══════════════════════════════════════════════════════ -->
+<div class="milestone-strip fade-in">
+  <div class="milestones">
+    <div class="milestone">
+      <div class="milestone-icon">🪷</div>
+      <span class="milestone-word">Vegetarian</span>
+      <span class="milestone-desc">Followed the Guru's teachings with her whole heart</span>
+    </div>
+    <div class="milestone">
+      <div class="milestone-icon">🌿</div>
+      <span class="milestone-word">Gardener</span>
+      <span class="milestone-desc">She planted life wherever she went — flowers, food, love</span>
+    </div>
+    <div class="milestone">
+      <div class="milestone-icon">🎶</div>
+      <span class="milestone-word">Singer</span>
+      <span class="milestone-desc">A voice that fills a room long after the song ends</span>
+    </div>
+    <div class="milestone">
+      <div class="milestone-icon">✂️</div>
+      <span class="milestone-word">Seamstress</span>
+      <span class="milestone-desc">She stitched beautiful clothes for her daughters by hand</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 5 · THE GURU & THE GARDEN LIFE
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter Five</span>
+  <h2>The Guru's Light, <em>the Garden's Gifts</em></h2>
+  <p class="lead">She found a path of peace — and walked it with her husband, hand in hand.</p>
+
+  <div class="photo-frame wide" onclick="triggerUpload(this)">
+    <div class="corner-tr"></div><div class="corner-bl"></div>
+    <div class="placeholder-icon">🌼</div>
+    <div class="placeholder-text">A photo of her in her garden, or at a puja/prayer</div>
+    <div class="photo-caption">Where she found her stillness</div>
+    <img alt="Garden or prayer photo"/>
+    <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+  </div>
+
+  <p>Together, she and her husband found His Holiness Sri Ganapathy Sacchidananda Swamiji as their spiritual guide. The guru's teachings changed something in her — she gave up meat entirely, embraced a gentler way of living, and found in devotion a quiet, daily joy.</p>
+
+  <p>Her home became a place of growth — literally. She planted food in the soil, tended flowers that had no agenda but to bloom. She stitched dresses for her daughters with her own hands, turning cloth into love. She sang. She cooked. She made something out of almost nothing, month after month, stretching her husband's modest salary until it became enough, and then some.</p>
+
+  <p>They never looked poor. Not because they had money. Because she had <em>grace</em>.</p>
+</article>
+
+<div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 6 · THE MOTHER
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter Six</span>
+  <h2>The Mother — <em>Two Beautiful Girls</em></h2>
+  <p class="lead">She did not raise daughters. She raised women.</p>
+
+  <div class="photo-grid">
+    <div class="photo-frame" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">🤱</div>
+      <div class="placeholder-text">Her with her daughters — young</div>
+      <div class="photo-caption">The beginning of her greatest chapter</div>
+      <img alt="With young daughters"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+    <div class="photo-frame" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">👩‍👧‍👧</div>
+      <div class="placeholder-text">A family photo — all four of you</div>
+      <div class="photo-caption">Her whole heart, in one frame</div>
+      <img alt="Family photo"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+  </div>
+
+  <p>First came one daughter — beautiful. Three years later, another — equally beautiful. Her family was complete.</p>
+
+  <p>She raised them without ever raising a hand. She raised them with books and soft voices, with homemade clothes and home-cooked meals, with the belief that education was the one thing no one could ever take away from a woman. She drove that belief into her daughters the only way she knew — by loving them completely and trusting them wholly.</p>
+
+  <div class="pull-quote">
+    <p>"She never beat us. She never had to. Her love was enough to make us want to become better."</p>
+    <cite>— Her daughter</cite>
+  </div>
+
+  <p>Both daughters graduated. Both are now studying abroad for their masters degrees. She sent them into the world with everything they needed and asked for nothing in return — except that they live well and be free.</p>
+</article>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 7 · THE STORM (dark chapter)
+═══════════════════════════════════════════════════════ -->
+<section class="chapter-dark fade-in">
+  <div class="chapter-dark-inner">
+    <span class="chapter-label">Chapter Seven</span>
+    <h2>The Storm — <em>and the Miracle</em></h2>
+    <p class="lead">She has faced the worst that life can offer. She is still here.</p>
+
+    <div class="photo-frame wide" onclick="triggerUpload(this)">
+      <div class="corner-tr"></div><div class="corner-bl"></div>
+      <div class="placeholder-icon">🕯️</div>
+      <div class="placeholder-text">A photo from her recovery — strong and alive</div>
+      <div class="photo-caption">Proof that she is still here. That she won.</div>
+      <img alt="Recovery photo"/>
+      <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+    </div>
+
+    <p>During her daughter's B.Tech years, the illness came. What began as symptoms became a diagnosis that stole the air from the room: <strong>liver cirrhosis</strong>. The doctors spoke plainly. Only a transplant would save her.</p>
+
+    <p>For an entire year she suffered — with a patience and endurance that cannot be put into words, only witnessed. The family held together. Somehow, through prayer and search and the grace of a stranger's generosity, a donor was found.</p>
+
+    <div class="pull-quote">
+      <p>"The pain she went through during this process is not explainable. It is only survivable. And she survived it."</p>
+    </div>
+
+    <p>The surgery was a success. Her new liver took. Her body, tested beyond what any body should be tested, chose to keep living. By the blessings of God and the skill of doctors and the sheer will of a woman who was not finished yet, she came through.</p>
+
+    <p>She calls it a second birth. She is right. And she faced even that — perhaps the most terrifying thing a person can face — and came out the other side <strong>not broken, but more whole than ever.</strong></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CHAPTER 8 · HER LEGACY
+═══════════════════════════════════════════════════════ -->
+<article class="chapter fade-in">
+  <span class="chapter-label">Chapter Eight</span>
+  <h2>Now — <em>Living, Dreaming, Shining</em></h2>
+  <p class="lead">Her daughters are across the ocean. Her heart is everywhere they are.</p>
+
+  <div class="photo-frame wide" onclick="triggerUpload(this)">
+    <div class="corner-tr"></div><div class="corner-bl"></div>
+    <div class="placeholder-icon">🌅</div>
+    <div class="placeholder-text">A recent photo of her — happy, at home</div>
+    <div class="photo-caption">Today. Strong. Peaceful. Still blooming.</div>
+    <img alt="Recent photo"/>
+    <input type="file" class="photo-upload" accept="image/*" onchange="loadPhoto(this)"/>
+  </div>
+
+  <p>Today, she lives in a village with her husband. The house is quiet in a different way now — the girls are gone to chase their futures, and she is proud of every mile of the distance. She tends her plants. She sings. She cooks meals and fills the house with the smells that will always mean <em>home</em> to her daughters, no matter where in the world they are standing.</p>
+
+  <p>She has been through everything. The small town that couldn't see her. The depression. The transplant. The loneliness of an empty nest. And she faces it all with the same quiet steadiness she has always carried.</p>
+
+  <div class="pull-quote">
+    <p>"She is really a strong woman! She is a rockstar."</p>
+    <cite>— Her daughter, who has been watching closely all along</cite>
+  </div>
+
+  <p>She is, above all, a woman who loved without conditions — who gave everything and asked only that her daughters be free. That is a kind of greatness the world rarely names. But her daughters know. They always will.</p>
+</article>
+
+<!-- ═══════════════════════════════════════════════════════
+     CLOSING LETTER
+═══════════════════════════════════════════════════════ -->
+<section class="closing">
+  <div class="closing-inner">
+    <p class="salutation">A Letter From Your Daughter · Mother's Day</p>
+    <h2>To the woman who made me brave by being brave first.</h2>
+    <div class="letter-body">
+      <p>Amma,</p>
+      <br/>
+      <p>You taught me what strength looks like — not the kind that shouts, but the kind that shows up every single day. The kind that stitches a dress when there is no money for the shop. The kind that plants a garden when the world feels barren. The kind that survives a surgery that should have broken someone and comes home and still makes your family feel safe.</p>
+      <br/>
+      <p>Those neighbours who said you were not beautiful — they were wrong. They will always have been wrong. You are the kind of beautiful that does not need anyone's permission. A photographer who had seen thousands of faces put yours in his window. Your husband looked at you once and never looked away. And I have spent my whole life watching you and thinking: <em>I want to be like her.</em></p>
+      <br/>
+      <p>Thank you for never beating us when you easily could have. For cooking and singing and growing things and making a small salary feel like abundance. For sending us far away even though it must have cost you something every day. For surviving. For choosing to keep living.</p>
+      <br/>
+      <p>I love you more than I know how to say. You are my greatest inspiration. Every single day.</p>
+      <br/>
+      <p>Happy Mother's Day, Amma. This one is for you.</p>
+    </div>
+    <div class="sign-off">— Your Daughter, with all my love 🌸</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer>
+  Made with love · For Amma · Mother's Day 2025
+</footer>
+
+<script>
+function triggerUpload(frame) {
+  frame.querySelector('.photo-upload').click();
+}
+function loadPhoto(input) {
+  const frame = input.closest('.photo-frame');
+  const img = frame.querySelector('img');
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    img.src = e.target.result;
+    frame.classList.add('has-photo');
+  };
+  reader.readAsDataURL(file);
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
