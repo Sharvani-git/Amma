@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>నా అమ్మ — ప్రేమతో నిండిన జీవితం</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<title>To My Amma — A Life in Full Bloom</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Noto+Sans+Telugu:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -25,7 +25,7 @@
   body {
     background: var(--cream);
     color: var(--ink);
-    font-family: 'Noto Serif Telugu', Georgia, serif;
+    font-family: 'Crimson Text', 'Noto Sans Telugu', Georgia, serif;
     font-size: 20px;
     line-height: 1.75;
     overflow-x: hidden;
@@ -71,7 +71,7 @@
       radial-gradient(ellipse 40% 30% at 20% 0%, rgba(168,66,26,0.12) 0%, transparent 60%);
   }
   .hero-ornament {
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
     letter-spacing: 0.35em;
     color: var(--gold-light);
@@ -80,7 +80,7 @@
     opacity: 0.8;
   }
   .hero h1 {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(4rem, 12vw, 9rem);
     font-weight: 400;
     font-style: italic;
@@ -91,7 +91,7 @@
     position: relative;
   }
   .hero-sub {
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.2rem, 3vw, 1.6rem);
     font-weight: 300;
     font-style: italic;
@@ -138,7 +138,7 @@
     position: relative;
   }
   .chapter-label {
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.8rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
@@ -147,7 +147,7 @@
     display: block;
   }
   .chapter h2 {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(1.8rem, 5vw, 2.8rem);
     font-weight: 700;
     color: var(--deep);
@@ -211,7 +211,7 @@
     opacity: 0.35;
   }
   .photo-frame .placeholder-text {
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -225,7 +225,7 @@
     left: 0; right: 0;
     background: rgba(42,20,0,0.65);
     color: var(--parchment);
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.9rem;
     font-style: italic;
     letter-spacing: 0.06em;
@@ -254,7 +254,7 @@
     background: rgba(200,134,26,0.06);
   }
   .pull-quote p {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.3em;
     font-style: italic;
     color: var(--deep);
@@ -312,7 +312,7 @@
   }
   .milestone-icon { font-size: 2rem; margin-bottom: 0.8rem; }
   .milestone-word {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--deep);
@@ -349,7 +349,7 @@
   }
   .closing-inner { max-width: 640px; margin: 0 auto; position: relative; }
   .closing .salutation {
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.85rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
@@ -358,7 +358,7 @@
     margin-bottom: 2rem;
   }
   .closing h2 {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 6vw, 3.8rem);
     font-style: italic;
     font-weight: 400;
@@ -375,7 +375,7 @@
     margin-bottom: 2.5rem;
   }
   .closing .sign-off {
-    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.6rem;
     color: var(--gold-light);
@@ -387,7 +387,7 @@
     background: #180A00;
     text-align: center;
     padding: 2rem;
-    font-family: 'Noto Sans Telugu', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.8rem;
     letter-spacing: 0.2em;
     color: rgba(200,134,26,0.4);
@@ -402,6 +402,85 @@
   }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
 
+
+  /* ─── LANGUAGE TOGGLE ─── */
+  .lang-toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: rgba(42, 20, 0, 0.72);
+    border: 1px solid rgba(232, 180, 84, 0.45);
+    color: var(--gold-light);
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+    font-family: 'Noto Sans Telugu', 'Crimson Text', Georgia, serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  .lang-toggle .lang-label {
+    min-width: 28px;
+    text-align: center;
+    opacity: 0.72;
+    transition: opacity 0.25s ease, color 0.25s ease;
+    user-select: none;
+  }
+  .lang-toggle .lang-label.active {
+    opacity: 1;
+    color: var(--cream);
+    font-weight: 700;
+  }
+  .lang-switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+  }
+  .lang-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .lang-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: rgba(253,246,236,0.18);
+    border: 1px solid rgba(232,180,84,0.35);
+    transition: 0.3s;
+    border-radius: 999px;
+  }
+  .lang-slider::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background: var(--gold-light);
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  }
+  .lang-switch input:checked + .lang-slider::before {
+    transform: translateX(23px);
+  }
+  body.telugu-mode {
+    font-family: 'Noto Sans Telugu', 'Crimson Text', Georgia, serif;
+  }
+  body.telugu-mode .hero h1,
+  body.telugu-mode .chapter h2,
+  body.telugu-mode .closing h2,
+  body.telugu-mode .pull-quote p,
+  body.telugu-mode .milestone-word {
+    font-family: 'Noto Sans Telugu', 'Playfair Display', serif;
+  }
+
   @media (max-width: 600px) {
     .chapter { padding: 4rem 1.25rem; }
     .photo-grid { grid-template-columns: 1fr; }
@@ -412,33 +491,43 @@
 </head>
 <body>
 
+<div class="lang-toggle" aria-label="Language switch">
+  <span id="englishLabel" class="lang-label active">EN</span>
+  <label class="lang-switch">
+    <input type="checkbox" id="languageToggle" aria-label="Switch between English and Telugu"/>
+    <span class="lang-slider"></span>
+  </label>
+  <span id="teluguLabel" class="lang-label">తెలుగు</span>
+</div>
+
+
 <!-- ═══════════════════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════════════════ -->
 <section class="hero">
-  <p class="hero-ornament">అమ్మకు అంకితం · నా హృదయం నిండిన ప్రేమతో</p>
-  <h1>అమ్మ</h1>
-  <p class="hero-sub">నిశ్శబ్ద ధైర్యం, అపారమైన అందం, ఎన్నటికీ తరుగని ప్రేమతో నిండిన ఒక జీవితం.</p>
-  <div class="hero-badge">ఆమె కథ · ఆమె ధైర్యం · ఆమె వెలుగు</div>
-  <div class="hero-scroll">క్రిందికి చూడండి</div>
+  <p class="hero-ornament">A Mother's Day Tribute · With All My Love</p>
+  <h1>Amma</h1>
+  <p class="hero-sub">A life of quiet courage, radiant beauty, and love that never ran out.</p>
+  <div class="hero-badge">Her Story · Her Strength · Her Light</div>
+  <div class="hero-scroll">Scroll</div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
      CHAPTER 1 · THE GIRL FROM THE SMALL TOWN
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం ఒకటి</span>
-  <h2>చిన్న పట్టణం నుండి వచ్చిన <em>ఆ అమ్మాయి</em></h2>
-  <p class="lead">ఆమె ఎంత అసాధారణమైనదో ఇంకా ప్రపంచానికి తెలియని రోజుల్లో, ఆమె సాధారణంగా పెరిగింది.</p>
-  <p>భారతదేశంలోని ఒక చిన్న పట్టణంలో, అన్నలతో నిండిన ఇంట్లో, రోజువారీ జీవిత శబ్దాల మధ్య ఆమె నిశ్శబ్దంగా ఈ లోకంలోకి వచ్చింది. ఆమె ఎక్కువగా మాట్లాడేది కాదు, తన కోసం ఎక్కువ స్థలం అడిగేది కాదు — ఆమె చూసేది, నేర్చుకునేది, లోతుగా అనుభూతి చెందేది. ప్రపంచం నిజంగా గుర్తించడానికి సంవత్సరాలు పట్టేంత వెచ్చదనాన్ని తనలో మోసుకెళ్లిన అమ్మాయి ఆమె.</p>
+  <span class="chapter-label">Chapter One</span>
+  <h2>The Girl From <em>the Small Town</em></h2>
+  <p class="lead">She grew up ordinary in a world that didn't yet know how extraordinary she was.</p>
+  <p>In a small town in India, in a home full of brothers and the sounds of everyday life, she arrived quietly into the world. She was not the loudest, not the one who demanded the most space — she was the girl who watched and learned, who felt deeply, who carried a warmth that would take years for the world to truly recognize.</p>
 
   <div class="photo-frame portrait">
     <div class="corner-tr"></div><div class="corner-bl"></div>
-    <div class="photo-caption">ప్రపంచమంతా ఇంకా ఆమె ముందున్న రోజులలో ఆమె</div>
-    <img src="Images/1.jpg" alt="చిన్ననాటి ఫోటో"/>
+    <div class="photo-caption">Her — when the whole world was still ahead</div>
+    <img src="Images/1.jpg" alt="Childhood photo"/>
   </div>
 
-  <p>నలుగురు అన్నలు, ఒక చిన్న పట్టణం, సాధారణ జీవితం — అయినా ఆమె మనసు ఎప్పుడూ చిన్నది కాలేదు. ఒకేసారి మృదువుగానూ, బలంగానూ ఉండే అమ్మాయి ఆమె. ప్రపంచం ఆలస్యంగా గుర్తించే గొప్ప మనుషుల్లా, ఆమె తన కలలను నిశ్శబ్దంగా మోసుకెళ్లింది.</p>
+  <p>Four brothers, a small town, simple means — and yet she never felt small inside. She was tender and strong in the same breath, a girl who carried dreams quietly, the way all extraordinary people do before the world catches up to them.</p>
 </article>
 
 <div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
@@ -448,27 +537,27 @@
 ═══════════════════════════════════════════════════════ -->
 <section class="chapter-dark fade-in">
   <div class="chapter-dark-inner">
-    <span class="chapter-label">అధ్యాయం రెండు</span>
-    <h2>చీకటి రోజులు — ఆమెను వెతుక్కొచ్చిన <em>వెలుగు</em></h2>
-    <p class="lead">వాళ్లు గాయపరచడానికి మాటలు మాట్లాడారు. కానీ వారు ఎవరితో మాట్లాడుతున్నారో వారికి తెలియదు.</p>
+    <span class="chapter-label">Chapter Two</span>
+    <h2>The Dark Days — and the <em>Light That Found Her</em></h2>
+    <p class="lead">They said words meant to wound. They did not know who they were speaking to.</p>
 
     <div class="photo-frame wide">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">ఆమె నిశ్శబ్దంలోనే వాళ్లు ఊహించలేని బలం దాగి ఉంది</div>
-      <img src="Images/2.jpg" alt="ఆలోచనలో ఉన్న ఫోటో"/>
+      <div class="photo-caption">In her silence, she was already stronger than they knew</div>
+      <img src="Images/2.jpg" alt="Reflective photo"/>
     </div>
 
-    <p>పెళ్లి సంబంధాల సమయం వచ్చినప్పుడు, చిన్న పట్టణంలోని చిన్న మనసులున్న కొందరు పొరుగువాళ్లు ఆమె చర్మరంగాన్నే పెద్ద విషయంగా చూశారు. “చాలా నల్లగా ఉంది” అన్నారు. “జీవితం కష్టమవుతుంది” అన్నారు. ఆమె అందాన్ని ఒక గాయంగా మార్చేశారు. కొంతకాలం ఆమె కూడా ఆ మాటలను నమ్మింది.</p>
+    <p>When the time came for marriage proposals, the neighbours — small minds in a small town — decided her skin tone was the loudest thing about her. They said she was "too dark." They said she would struggle. They turned her beauty into a wound. And for a time, she believed them.</p>
 
     <div class="pull-quote">
-      <p>“ఆమె మౌనంగా మారిపోయింది. క్రూరత్వం అలా చేస్తుంది — అది కేవలం మనసును గాయపరచదు, అద్దంలో కనిపించే మనల్ని మనమే అనుమానించేలా చేస్తుంది.”</p>
+      <p>"She went quiet. That is what cruelty does — it doesn't just hurt you, it makes you doubt the mirror."</p>
     </div>
 
-    <p>తాము సరిపోమని ఎప్పుడో ఎవరో చెప్పిన బాధను అనుభవించిన వాళ్లకే అర్థమయ్యే ఒక దిగులులో ఆమె మునిగిపోయింది. కానీ ఆమె అక్కడే నిలిచిపోలేదు. తన విలువను గుర్తించని చోట ఆమె ఎప్పుడూ ఎక్కువ కాలం ఉండలేదు.</p>
+    <p>She fell into a sadness that only those who have been told they are not enough can understand. But she did not stay there. She never stayed anywhere that didn't deserve her.</p>
 
-    <p>ఆమె నగరానికి వెళ్లింది. ఆ నగరం ఆమెను వేరేలా చూసింది. అక్కడి పొరుగువాళ్లు — విస్తృతమైన మనసున్న వాళ్లు — ఆమెను చూసి సాదాసీదాగా <em>“నువ్వు చాలా అందంగా ఉన్నావు.”</em> అన్నారు. వాళ్లు నిజంగానే అన్నారు. ఎలాంటి షరతులు లేకుండా. ఎలాంటి పోలికలు లేకుండా. కేవలం నిజం మాత్రమే.</p>
+    <p>She went to the city. And the city saw her differently. Neighbours there — people who had breathed wider air — looked at her and said simply: <em>"You are beautiful."</em> And they meant it. No footnote. No qualification. Just the truth.</p>
 
-    <p>ఆ దిగులు మెల్లగా తొలిగిపోయింది. ఒక్కసారిగా కాదు. కానీ సూర్యుడు పట్టుదలగా ఉదయిస్తే పొగమంచు ఎలా తొలగిపోతుందో, అలా తొలిగిపోయింది.</p>
+    <p>The depression lifted. Not all at once, but it lifted — like fog when the sun insists on itself.</p>
   </div>
 </section>
 
@@ -476,27 +565,27 @@
      CHAPTER 3 · THE PHOTO STUDIO
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం మూడు</span>
-  <h2>ఆమె తనను తాను <em>చూసుకున్న రోజు</em></h2>
-  <p class="lead">ఒక కెమెరా పట్టుకున్న అపరిచితుడు, వందమంది చెప్పలేని నిజాన్ని ఆమెకు చెప్పాడు.</p>
-  <p>నగరంలో ఒక మధ్యాహ్నం, ఆమె ఒక ఫోటో స్టూడియోలోకి అడుగుపెట్టింది. సాధారణ రోజు, సాధారణ వీధి. బహుశా ఇంకా ఆ బాధించే మాటల ప్రతిధ్వనులను మనసులో మోసుకుంటూనే, ఆమె కెమెరా ముందు కూర్చుంది.</p>
+  <span class="chapter-label">Chapter Three</span>
+  <h2>The Day She <em>Saw Herself</em></h2>
+  <p class="lead">A stranger with a camera told her what a hundred people had failed to say.</p>
+  <p>One afternoon in the city, she walked into a photography studio. An ordinary day, an ordinary street. She sat before the lens, perhaps still carrying the echoes of unkind words.</p>
 
   <div class="photo-frame portrait">
     <div class="corner-tr"></div><div class="corner-bl"></div>
-    <div class="photo-caption">ఆమె తన నిజాన్ని తెలుసుకునే ముందే, ఆ ఫోటో తెలుసుకుంది</div>
-    <img src="Images/3.jpg" alt="స్టూడియో ఫోటో"/>
+    <div class="photo-caption">The photograph that knew her truth before she did</div>
+    <img src="Images/3.jpg" alt="Studio photo"/>
   </div>
 
-  <p>ఫోటోగ్రాఫర్ ఫోటోలను డెవలప్ చేసి చూసాడు. తర్వాత ఆమె ఊహించని పని చేశాడు: <strong>ఆమె ఫోటోలను ఫ్రేమ్ చేసి తన స్టూడియో కిటికీలో పెట్టాడు</strong>. అది అందానికి ఇచ్చిన గౌరవం. ప్రపంచానికి చూపించదగిన వ్యక్తికి ఇచ్చిన స్థానం.</p>
+  <p>The photographer developed the pictures and looked at them. Then he did something she did not expect: he <strong>framed her photographs and placed them in his studio window</strong>. A display of beauty. Of someone worth showing to the world.</p>
 
   <div class="pull-quote">
-    <p>“ఆమె నిజంగా హీరోయిన్‌లా కనిపించింది కాబట్టి అతను ఆమె ఫోటోలను పెట్టుకున్నాడు. ఎందుకంటే ఆమె నిజంగానే అలానే కనిపించింది.”</p>
-    <cite>— ఆమె కూతురు గుర్తుచేసుకున్నట్లుగా</cite>
+    <p>"He kept her pictures because she looked like a heroine. Because she did."</p>
+    <cite>— as remembered by her daughter</cite>
   </div>
 
-  <p>ఆ క్షణంలో ఆమె లోపల ఏదో మారిపోయింది. ఒక అపరిచితుడు ఆమెను గుర్తించాడు కాబట్టి మాత్రమే కాదు — ఎప్పటినుంచో నిజమైన విషయాన్ని ఆమె చివరకు తన కళ్లతో చూసుకుంది కాబట్టి. చిన్న పట్టణం నుండి వచ్చిన ఆ అమ్మాయి ఎప్పటినుంచో ప్రకాశవంతురాలే.</p>
+  <p>In that moment, something shifted inside her. Not because a stranger validated her — but because she finally had permission to see what had always been true. The girl from the small town was, and had always been, radiant.</p>
 
-  <p>ఆమె ఇంటికి తిరిగి వచ్చినప్పుడు మారిపోయింది. ఇక కదిలించలేని బలంతో వచ్చింది. పొరుగువాళ్లు ఇప్పుడు ఏం చెప్పినా పర్వాలేదు. ఆమె తనను తాను చూసుకుంది — నిజంగా చూసుకుంది — ఆ తెలుసుకున్న నిజం ఇక ఆమెదే.</p>
+  <p>She came home different. Unshakeable. The neighbours could say what they wanted now. She had seen herself — really seen herself — and that knowledge was hers to keep.</p>
 </article>
 
 <div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
@@ -505,33 +594,33 @@
      CHAPTER 4 · LOVE FINDS HER
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం నాలుగు</span>
-  <h2>ఆమె రంగును కాదు, <em>ఆమె మనసును చూసిన మనిషి</em></h2>
-  <p class="lead">అతను ఆమెను చూసి నిజంగా ముఖ్యమైనదంతా చూశాడు.</p>
+  <span class="chapter-label">Chapter Four</span>
+  <h2>The Man Who <em>Never Saw Her Color</em></h2>
+  <p class="lead">He looked at her and saw everything that mattered.</p>
 
   <div class="photo-grid">
     <div class="photo-frame">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">అన్నిటి ఆరంభం</div>
-      <img src="Images/4.jpg" alt="పెళ్లి ఫోటో"/>
+      <div class="photo-caption">The beginning of everything</div>
+      <img src="Images/4.jpg" alt="Wedding photo"/>
     </div>
     <div class="photo-frame">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">ఇద్దరు మనుషులు, ఒక జీవితం</div>
-      <img src="Images/5.jpg" alt="దంపతుల ఫోటో"/>
+      <div class="photo-caption">Two people, one life</div>
+      <img src="Images/5.jpg" alt="Couple photo"/>
     </div>
   </div>
 
-  <p>పెళ్లి సంబంధం వచ్చినప్పుడు, అతను తెల్లని చర్మంతో, ప్రశాంతమైన చూపుతో వచ్చాడు. అతను ఆమెను చూశాడు. వెంటనే ఇష్టపడ్డాడు. మొదటి చూపులోనే.</p>
+  <p>When the arranged marriage proposal arrived, he came with bright, fair skin and steady eyes. He saw her and liked her. Immediately. First sight.</p>
 
-  <p>ఏళ్ల తర్వాత, ఆమె అతనిని సున్నితంగా అడిగింది — కొంచెం సరదాగా, కొంచెం నిజంగా తెలుసుకోవాలనే కోరికతో — ప్రపంచం తన రంగు గురించి ఏమన్నదో తెలిసినా ఎందుకు తనను ఎంచుకున్నావని.</p>
+  <p>Years later, she asked him gently — half teasing, half needing to know — why he had chosen her, knowing what the world had said about her complexion.</p>
 
   <div class="pull-quote">
-    <p>“నువ్వు నల్లగా ఉన్నావని నాకు ఒక్కసారి కూడా అనిపించలేదు. రంగు నాకు ఎప్పుడూ ముఖ్యం కాదు. మనిషి ముఖ్యం. లోపలున్న హృదయం ముఖ్యం.”</p>
-    <cite>— ఆమె భర్త, ఆమె ప్రేమ</cite>
+    <p>"I never felt, not once, that you were dark. Colour has never mattered to me. Only the person. Only the heart inside."</p>
+    <cite>— Her husband, her love</cite>
   </div>
 
-  <p>అంతే. పొరుగువాళ్ల మాటలు చిన్నవైపోయాయి. పాత గాయం చివరకు మానిపోయింది — నొప్పి ఇవ్వకుండా గుర్తుగా మాత్రమే మిగిలే మచ్చలా మారిపోయింది.</p>
+  <p>And that was that. The neighbours' voices became smaller. The old wound, at last, closed over and became scar tissue — something that marks you without hurting you anymore.</p>
 </article>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -541,23 +630,23 @@
   <div class="milestones">
     <div class="milestone">
       <div class="milestone-icon">🪷</div>
-      <span class="milestone-word">శాకాహారి</span>
-      <span class="milestone-desc">గురువు బోధనలను హృదయపూర్వకంగా అనుసరించింది</span>
+      <span class="milestone-word">Vegetarian</span>
+      <span class="milestone-desc">Followed the Guru's teachings with her whole heart</span>
     </div>
     <div class="milestone">
       <div class="milestone-icon">🌿</div>
-      <span class="milestone-word">తోటమాలి</span>
-      <span class="milestone-desc">ఆమె ఎక్కడికి వెళ్లినా జీవాన్ని నాటింది — పూలు, ఆహారం, ప్రేమ</span>
+      <span class="milestone-word">Gardener</span>
+      <span class="milestone-desc">She planted life wherever she went — flowers, food, love</span>
     </div>
     <div class="milestone">
       <div class="milestone-icon">🎶</div>
-      <span class="milestone-word">గాయని</span>
-      <span class="milestone-desc">పాట ముగిసిన తర్వాత కూడా గదిలో మిగిలిపోయే స్వరం</span>
+      <span class="milestone-word">Singer</span>
+      <span class="milestone-desc">A voice that fills a room long after the song ends</span>
     </div>
     <div class="milestone">
       <div class="milestone-icon">✂️</div>
-      <span class="milestone-word">కుట్టు కళాకారిణి</span>
-      <span class="milestone-desc">తన కూతుళ్ల కోసం అందమైన బట్టలను తన చేతులతో కుట్టింది</span>
+      <span class="milestone-word">Seamstress</span>
+      <span class="milestone-desc">She stitched beautiful clothes for her daughters by hand</span>
     </div>
   </div>
 </div>
@@ -566,21 +655,21 @@
      CHAPTER 5 · THE GURU & THE GARDEN LIFE
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం ఐదు</span>
-  <h2>గురువు వెలుగు, <em>తోట ఇచ్చిన వరాలు</em></h2>
-  <p class="lead">ఆమె ప్రశాంతత దారిని కనుగొంది — తన భర్తతో చేతిలో చేయి వేసుకుని ఆ దారిలో నడిచింది.</p>
+  <span class="chapter-label">Chapter Five</span>
+  <h2>The Guru's Light, <em>the Garden's Gifts</em></h2>
+  <p class="lead">She found a path of peace — and walked it with her husband, hand in hand.</p>
 
   <div class="photo-frame wide">
     <div class="corner-tr"></div><div class="corner-bl"></div>
-    <div class="photo-caption">ఆమె మనసుకు ప్రశాంతత దొరికిన చోటు</div>
-    <img src="Images/6.jpg" alt="తోట లేదా ప్రార్థన ఫోటో"/>
+    <div class="photo-caption">Where she found her stillness</div>
+    <img src="Images/6.jpg" alt="Garden or prayer photo"/>
   </div>
 
-  <p>ఆమె మరియు ఆమె భర్త కలిసి శ్రీ గణపతి సచ్చిదానంద స్వామీజీని తమ ఆధ్యాత్మిక గురువుగా స్వీకరించారు. గురువు బోధనలు ఆమె లోపల ఏదో మార్చాయి — ఆమె పూర్తిగా మాంసాహారం మానేసి, మరింత సున్నితమైన జీవన విధానాన్ని స్వీకరించి, భక్తిలో నిశ్శబ్దమైన రోజువారీ ఆనందాన్ని కనుగొంది.</p>
+  <p>Together, she and her husband found His Holiness Sri Ganapathy Sacchidananda Swamiji as their spiritual guide. The guru's teachings changed something in her — she gave up meat entirely, embraced a gentler way of living, and found in devotion a quiet, daily joy.</p>
 
-  <p>ఆమె ఇల్లు నిజంగానే పెరుగుదలతో నిండిపోయింది. ఆమె నేలలో ఆహారాన్ని నాటింది, వికసించడమే లక్ష్యంగా ఉన్న పూలను పెంచింది. తన కూతుళ్ల కోసం తన చేతులతో దుస్తులు కుట్టింది — బట్టను ప్రేమగా మార్చింది. ఆమె పాడింది. వండింది. నెలనెలా తన భర్త సాధారణ జీతాన్ని సరిపడేలా, ఇంకా కొంచెం ఎక్కువగా అనిపించేలా మార్చింది.</p>
+  <p>Her home became a place of growth — literally. She planted food in the soil, tended flowers that had no agenda but to bloom. She stitched dresses for her daughters with her own hands, turning cloth into love. She sang. She cooked. She made something out of almost nothing, month after month, stretching her husband's modest salary until it became enough, and then some.</p>
 
-  <p>వాళ్లు ఎప్పుడూ పేదలలా కనిపించలేదు. వాళ్ల దగ్గర డబ్బు ఉన్నందుకే కాదు. ఆమె దగ్గర <em>గౌరవం, సౌమ్యత, అందం</em> ఉన్నందుకు.</p>
+  <p>They never looked poor. Not because they had money. Because she had <em>grace</em>.</p>
 </article>
 
 <div class="lotus-divider"><span class="lotus-icon">✦ ✦ ✦</span></div>
@@ -589,33 +678,33 @@
      CHAPTER 6 · THE MOTHER
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం ఆరు</span>
-  <h2>తల్లి — <em>ఇద్దరు అందమైన కూతుళ్లు</em></h2>
-  <p class="lead">ఆమె కేవలం కూతుళ్లను పెంచలేదు. బలమైన మహిళలను తీర్చిదిద్దింది.</p>
+  <span class="chapter-label">Chapter Six</span>
+  <h2>The Mother — <em>Two Beautiful Girls</em></h2>
+  <p class="lead">She did not raise daughters. She raised women.</p>
 
   <div class="photo-grid">
     <div class="photo-frame">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">ఆమె జీవితంలోని గొప్ప అధ్యాయం ప్రారంభం</div>
-      <img src="Images/7.jpg" alt="చిన్న వయసులో కూతుళ్లతో ఫోటో"/>
+      <div class="photo-caption">The beginning of her greatest chapter</div>
+      <img src="Images/7.jpg" alt="With young daughters"/>
     </div>
     <div class="photo-frame">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">ఆమె హృదయం మొత్తం ఒకే ఫ్రేమ్‌లో</div>
-      <img src="Images/8.jpg" alt="కుటుంబ ఫోటో"/>
+      <div class="photo-caption">Her whole heart, in one frame</div>
+      <img src="Images/8.jpg" alt="Family photo"/>
     </div>
   </div>
 
-  <p>మొదట ఒక కూతురు వచ్చింది — అందంగా. మూడు సంవత్సరాల తర్వాత ఇంకొక కూతురు — అంతే అందంగా. ఆమె కుటుంబం సంపూర్ణమైంది.</p>
+  <p>First came one daughter — beautiful. Three years later, another — equally beautiful. Her family was complete.</p>
 
-  <p>ఆమె ఎప్పుడూ చేయి ఎత్తకుండా వాళ్లను పెంచింది. పుస్తకాలతో, మృదువైన మాటలతో, ఇంట్లో కుట్టిన బట్టలతో, ఇంటి వంటలతో పెంచింది. ఒక మహిళ నుండి ఎవరూ తీసుకోలేని ఒకటి విద్య అని ఆమె నమ్మింది. ఆ నమ్మకాన్ని తన కూతుళ్లలో నాటింది — తనకు తెలిసిన ఏకైక మార్గంలో: పూర్తిగా ప్రేమించడం ద్వారా, పూర్తిగా నమ్మడం ద్వారా.</p>
+  <p>She raised them without ever raising a hand. She raised them with books and soft voices, with homemade clothes and home-cooked meals, with the belief that education was the one thing no one could ever take away from a woman. She drove that belief into her daughters the only way she knew — by loving them completely and trusting them wholly.</p>
 
   <div class="pull-quote">
-    <p>“ఆమె మమ్మల్ని ఎప్పుడూ కొట్టలేదు. కొట్టాల్సిన అవసరమే రాలేదు. మేము మంచి వాళ్లుగా మారాలని అనిపించడానికి ఆమె ప్రేమే సరిపోయింది.”</p>
-    <cite>— ఆమె కూతురు</cite>
+    <p>"She never beat us. She never had to. Her love was enough to make us want to become better."</p>
+    <cite>— Her daughter</cite>
   </div>
 
-  <p>ఇద్దరు కూతుళ్లు గ్రాడ్యుయేట్ అయ్యారు. ఇద్దరూ ఇప్పుడు మాస్టర్స్ కోసం విదేశాల్లో చదువుతున్నారు. వాళ్లకు అవసరమైన ప్రతిదీ ఇచ్చి ఆమె వారిని ప్రపంచంలోకి పంపింది. ప్రతిఫలంగా ఏమీ అడగలేదు — వాళ్లు బాగా జీవించాలి, స్వేచ్ఛగా ఉండాలి అంతే.</p>
+  <p>Both daughters graduated. Both are now studying abroad for their masters degrees. She sent them into the world with everything they needed and asked for nothing in return — except that they live well and be free.</p>
 </article>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -623,27 +712,27 @@
 ═══════════════════════════════════════════════════════ -->
 <section class="chapter-dark fade-in">
   <div class="chapter-dark-inner">
-    <span class="chapter-label">అధ్యాయం ఏడు</span>
-    <h2>తుఫాను — <em>మరియు అద్భుతం</em></h2>
-    <p class="lead">జీవితం ఎదురుపెట్టగలిగిన అత్యంత కఠిన పరిస్థితులను ఆమె ఎదుర్కొంది. ఆమె ఇంకా ఇక్కడే ఉంది.</p>
+    <span class="chapter-label">Chapter Seven</span>
+    <h2>The Storm — <em>and the Miracle</em></h2>
+    <p class="lead">She has faced the worst that life can offer. She is still here.</p>
 
     <div class="photo-frame wide">
       <div class="corner-tr"></div><div class="corner-bl"></div>
-      <div class="photo-caption">ఆమె ఇంకా నిలబడి ఉందనే సాక్ష్యం. ఆమె గెలిచిందనే నిదర్శనం.</div>
-      <img src="Images/9.jpg" alt="ఆరోగ్యంగా కోలుకున్న ఫోటో"/>
+      <div class="photo-caption">Proof that she is still here. That she won.</div>
+      <img src="Images/9.jpg" alt="Recovery photo"/>
     </div>
 
-    <p>ఆమె కూతురు బీటెక్ చదువుతున్న సంవత్సరాల్లో, అనారోగ్యం వచ్చింది. మొదట లక్షణాలుగా కనిపించినది, గదిలోని గాలినే ఆపేసే నిర్ధారణగా మారింది: <strong>లివర్ సిరోసిస్</strong>. డాక్టర్లు స్పష్టంగా చెప్పారు. ట్రాన్స్‌ప్లాంట్ మాత్రమే ఆమెను కాపాడగలదు.</p>
+    <p>During her daughter's B.Tech years, the illness came. What began as symptoms became a diagnosis that stole the air from the room: <strong>liver cirrhosis</strong>. The doctors spoke plainly. Only a transplant would save her.</p>
 
-    <p>ఒక సంవత్సరం మొత్తం ఆమె బాధపడింది — మాటల్లో చెప్పలేని ఓర్పుతో, తట్టుకునే శక్తితో. కుటుంబం కలిసి నిలబడింది. ప్రార్థనలతో, వెతుకులాటతో, ఒక అపరిచితుని దాతృత్వ కృపతో, చివరకు ఒక డోనర్ దొరికారు.</p>
+    <p>For an entire year she suffered — with a patience and endurance that cannot be put into words, only witnessed. The family held together. Somehow, through prayer and search and the grace of a stranger's generosity, a donor was found.</p>
 
     <div class="pull-quote">
-      <p>“ఈ ప్రక్రియలో ఆమె అనుభవించిన బాధను వివరించలేం. దాన్ని తట్టుకోవడమే సాధ్యం. ఆమె దాన్ని తట్టుకుంది.”</p>
+      <p>"The pain she went through during this process is not explainable. It is only survivable. And she survived it."</p>
     </div>
 
-    <p>శస్త్రచికిత్స విజయవంతమైంది. కొత్త లివర్ ఆమె శరీరం స్వీకరించింది. ఏ శరీరమూ ఎదుర్కొనకూడని స్థాయిలో పరీక్షించబడిన ఆమె శరీరం, జీవించడాన్ని ఎంచుకుంది. దేవుని ఆశీర్వాదంతో, డాక్టర్ల నైపుణ్యంతో, ఇంకా ముగియని ఒక మహిళ యొక్క అచంచల సంకల్పంతో, ఆమె బయటపడింది.</p>
+    <p>The surgery was a success. Her new liver took. Her body, tested beyond what any body should be tested, chose to keep living. By the blessings of God and the skill of doctors and the sheer will of a woman who was not finished yet, she came through.</p>
 
-    <p>ఆమె దాన్ని తన రెండో జన్మ అంటుంది. ఆమె చెప్పింది నిజమే. మనిషి ఎదుర్కోగలిగిన అత్యంత భయంకరమైన దాన్ని కూడా ఆమె ఎదుర్కొని, మరో వైపు నుంచి <strong>విరిగిపోకుండా, మరింత సంపూర్ణంగా</strong> బయటకు వచ్చింది.</p>
+    <p>She calls it a second birth. She is right. And she faced even that — perhaps the most terrifying thing a person can face — and came out the other side <strong>not broken, but more whole than ever.</strong></p>
   </div>
 </section>
 
@@ -651,26 +740,26 @@
      CHAPTER 8 · HER LEGACY
 ═══════════════════════════════════════════════════════ -->
 <article class="chapter fade-in">
-  <span class="chapter-label">అధ్యాయం ఎనిమిది</span>
-  <h2>ఇప్పుడు — <em>జీవిస్తూ, కలలు కంటూ, వెలుగుతూ</em></h2>
-  <p class="lead">ఆమె కూతుళ్లు సముద్రం ఆవల ఉన్నా, ఆమె హృదయం వాళ్లు ఉన్న ప్రతి చోట ఉంటుంది.</p>
+  <span class="chapter-label">Chapter Eight</span>
+  <h2>Now — <em>Living, Dreaming, Shining</em></h2>
+  <p class="lead">Her daughters are across the ocean. Her heart is everywhere they are.</p>
 
   <div class="photo-frame wide">
     <div class="corner-tr"></div><div class="corner-bl"></div>
-    <div class="photo-caption">ఈరోజు. బలంగా. ప్రశాంతంగా. ఇంకా వికసిస్తూ.</div>
-    <img src="Images/10.jpg" alt="ప్రస్తుత ఫోటో"/>
+    <div class="photo-caption">Today. Strong. Peaceful. Still blooming.</div>
+    <img src="Images/10.jpg" alt="Recent photo"/>
   </div>
 
-  <p>ఈరోజు ఆమె తన భర్తతో గ్రామంలో జీవిస్తోంది. ఇల్లు ఇప్పుడు వేరే విధంగా నిశ్శబ్దంగా ఉంది — అమ్మాయిలు తమ భవిష్యత్తుల కోసం దూరంగా వెళ్లారు. ఆ దూరంలోని ప్రతి మైలుపై ఆమెకు గర్వం ఉంది. ఆమె తన మొక్కలను చూసుకుంటుంది. పాటలు పాడుతుంది. వంట చేస్తుంది. ప్రపంచంలో ఎక్కడ ఉన్నా, ఆమె కూతుళ్లకు ఎప్పటికీ <em>ఇల్లు</em> అనిపించే వాసనలతో ఆ ఇంటిని నింపుతుంది.</p>
+  <p>Today, she lives in a village with her husband. The house is quiet in a different way now — the girls are gone to chase their futures, and she is proud of every mile of the distance. She tends her plants. She sings. She cooks meals and fills the house with the smells that will always mean <em>home</em> to her daughters, no matter where in the world they are standing.</p>
 
-  <p>ఆమె అన్నింటినీ దాటింది. ఆమెను చూడలేని చిన్న పట్టణాన్ని. దిగులును. ట్రాన్స్‌ప్లాంట్‌ను. పిల్లలు దూరంగా వెళ్లిన తర్వాత వచ్చే ఖాళీ ఇంటి ఒంటరితనాన్ని. ఇవన్నీ ఆమె ఎప్పటిలాగే అదే నిశ్శబ్ద స్థిరత్వంతో ఎదుర్కొంటోంది.</p>
+  <p>She has been through everything. The small town that couldn't see her. The depression. The transplant. The loneliness of an empty nest. And she faces it all with the same quiet steadiness she has always carried.</p>
 
   <div class="pull-quote">
-    <p>“ఆమె నిజంగా చాలా బలమైన మహిళ! ఆమె ఒక రాక్‌స్టార్.”</p>
-    <cite>— ఆమె కూతురు, who has been watching closely all along</cite>
+    <p>"She is really a strong woman! She is a rockstar."</p>
+    <cite>— Her daughter, who has been watching closely all along</cite>
   </div>
 
-  <p>అన్నిటికంటే ముందు, ఆమె షరతుల్లేని ప్రేమతో ప్రేమించిన మహిళ — అన్నీ ఇచ్చి, తన కూతుళ్లు స్వేచ్ఛగా ఉండాలని మాత్రమే కోరుకున్న తల్లి. ప్రపంచం అరుదుగా పేరు పెట్టే గొప్పతనం అది. కానీ ఆమె కూతుళ్లు తెలుసుకుంటారు. ఎప్పటికీ తెలుసుకుంటూనే ఉంటారు.</p>
+  <p>She is, above all, a woman who loved without conditions — who gave everything and asked only that her daughters be free. That is a kind of greatness the world rarely names. But her daughters know. They always will.</p>
 </article>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -678,22 +767,22 @@
 ═══════════════════════════════════════════════════════ -->
 <section class="closing">
   <div class="closing-inner">
-    <p class="salutation">నీ కూతురు నుండి ఒక లేఖ · మదర్స్ డే సందర్భంగా</p>
-    <h2>ముందుగా ధైర్యంగా నిలబడి, నన్నూ ధైర్యంగా మార్చిన మహిళకు.</h2>
+    <p class="salutation">A Letter From Your Daughter · Mother's Day</p>
+    <h2>To the woman who made me brave by being brave first.</h2>
     <div class="letter-body">
-      <p>అమ్మా,</p>
+      <p>Amma,</p>
       <br/>
-      <p>బలం ఎలా ఉంటుందో నువ్వే నాకు నేర్పించావు — అరుస్తూ కనిపించే బలం కాదు, ప్రతి రోజూ నిశ్శబ్దంగా నిలబడే బలం. షాపులో కొనడానికి డబ్బు లేనప్పుడు దుస్తులు కుట్టే బలం. ప్రపంచం వెలితిగా అనిపించినప్పుడు తోట నాటే బలం. మనిషిని విరిచేయగలిగిన శస్త్రచికిత్సను దాటి ఇంటికి వచ్చి, ఇంకా కుటుంబానికి భద్రతగా అనిపించేలా చేసే బలం.</p>
+      <p>You taught me what strength looks like — not the kind that shouts, but the kind that shows up every single day. The kind that stitches a dress when there is no money for the shop. The kind that plants a garden when the world feels barren. The kind that survives a surgery that should have broken someone and comes home and still makes your family feel safe.</p>
       <br/>
-      <p>నువ్వు అందంగా లేవని అన్న ఆ పొరుగువాళ్లు తప్పు చెప్పారు. వాళ్లు ఎప్పటికీ తప్పే. నీ అందానికి ఎవరి అనుమతి అవసరం లేదు. వేల ముఖాలు చూసిన ఒక ఫోటోగ్రాఫర్ నీ ఫోటోను తన స్టూడియో కిటికీలో పెట్టాడు. నీ భర్త నిన్ను ఒక్కసారి చూసి, మళ్లీ ఎప్పుడూ చూపు తిప్పలేదు. నేను నా జీవితమంతా నిన్ను చూస్తూ ఒకటే అనుకున్నాను: <em>నేను అమ్మలాగా ఉండాలి.</em></p>
+      <p>Those neighbours who said you were not beautiful — they were wrong. They will always have been wrong. You are the kind of beautiful that does not need anyone's permission. A photographer who had seen thousands of faces put yours in his window. Your husband looked at you once and never looked away. And I have spent my whole life watching you and thinking: <em>I want to be like her.</em></p>
       <br/>
-      <p>మమ్మల్ని సులభంగా కొట్టగలిగే సందర్భాల్లో కూడా ఎప్పుడూ కొట్టకుండా పెంచినందుకు ధన్యవాదాలు. వండినందుకు, పాడినందుకు, మొక్కలు పెంచినందుకు, చిన్న జీతాన్ని కూడా సమృద్ధిగా అనిపించేలా చేసినందుకు ధన్యవాదాలు. మమ్మల్ని దూరంగా పంపడం నీకు ప్రతిరోజూ ఎంత కష్టమో తెలిసినా పంపినందుకు ధన్యవాదాలు. బ్రతికినందుకు ధన్యవాదాలు. జీవించడాన్ని ఎంచుకున్నందుకు ధన్యవాదాలు.</p>
+      <p>Thank you for never beating us when you easily could have. For cooking and singing and growing things and making a small salary feel like abundance. For sending us far away even though it must have cost you something every day. For surviving. For choosing to keep living.</p>
       <br/>
-      <p>నేను మాటల్లో చెప్పలేనంతగా నిన్ను ప్రేమిస్తున్నాను. నువ్వే నా గొప్ప ప్రేరణ. ప్రతి ఒక్క రోజూ.</p>
+      <p>I love you more than I know how to say. You are my greatest inspiration. Every single day.</p>
       <br/>
-      <p>హ్యాపీ మదర్స్ డే అమ్మా. ఇది నీకోసం.</p>
+      <p>Happy Mother's Day, Amma. This one is for you.</p>
     </div>
-    <div class="sign-off">— నీ కూతురు, నా హృదయం నిండిన ప్రేమతో 🌸</div>
+    <div class="sign-off">— Your Daughter, with all my love 🌸</div>
   </div>
 </section>
 
@@ -701,7 +790,7 @@
      FOOTER
 ═══════════════════════════════════════════════════════ -->
 <footer>
-  ప్రేమతో తయారు చేయబడింది · అమ్మ కోసం · మదర్స్ డే 2026
+  Made with love · For Amma · Mother's Day 2026
 </footer>
 
 <script>
@@ -711,6 +800,171 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+
+const translations = {
+  "To My Amma — A Life in Full Bloom": "నా అమ్మ — ప్రేమతో వికసించిన జీవితం",
+  "A Mother's Day Tribute · With All My Love": "అమ్మకు అంకితం · నా ప్రేమంతా నీకే",
+  "Amma": "అమ్మ",
+  "A life of quiet courage, radiant beauty, and love that never ran out.": "నిశ్శబ్ద ధైర్యం, ప్రకాశించే అందం, ఎన్నటికీ తరుగని ప్రేమతో నిండిన ఒక జీవితం.",
+  "Her Story · Her Strength · Her Light": "ఆమె కథ · ఆమె బలం · ఆమె వెలుగు",
+  "Scroll": "క్రిందికి చూడండి",
+  "Chapter One": "అధ్యాయం ఒకటి",
+  "The Girl From": "చిన్న పట్టణం నుండి వచ్చిన",
+  "the Small Town": "ఆ అమ్మాయి",
+  "She grew up ordinary in a world that didn't yet know how extraordinary she was.": "ఆమె ఎంత అసాధారణమైనదో ఇంకా ప్రపంచానికి తెలియని రోజుల్లో, ఆమె సాధారణంగా పెరిగింది.",
+  "In a small town in India, in a home full of brothers and the sounds of everyday life, she arrived quietly into the world. She was not the loudest, not the one who demanded the most space — she was the girl who watched and learned, who felt deeply, who carried a warmth that would take years for the world to truly recognize.": "భారతదేశంలోని ఒక చిన్న పట్టణంలో, అన్నలతో నిండిన ఇంట్లో, రోజువారీ జీవిత శబ్దాల మధ్య ఆమె నిశ్శబ్దంగా ఈ లోకంలోకి వచ్చింది. ఆమె గట్టిగా మాట్లాడేది కాదు, తన కోసం ఎక్కువ స్థలం అడిగేది కాదు — ఆమె గమనించేది, నేర్చుకునేది, లోతుగా అనుభూతి చెందేది. ఆమె హృదయంలో ఉన్న ఆ వెచ్చదనాన్ని ప్రపంచం నిజంగా గుర్తించడానికి ఎన్నో సంవత్సరాలు పట్టింది.",
+  "Her — when the whole world was still ahead": "ప్రపంచమంతా ఇంకా ఆమె ముందున్న రోజులలో ఆమె",
+  "Four brothers, a small town, simple means — and yet she never felt small inside. She was tender and strong in the same breath, a girl who carried dreams quietly, the way all extraordinary people do before the world catches up to them.": "నలుగురు అన్నలు, చిన్న పట్టణం, సాధారణ జీవితం — అయినా ఆమె మనసు ఎప్పుడూ చిన్నది కాలేదు. ఆమె ఒకేసారి మృదువుగానూ, బలంగానూ ఉండేది. ప్రపంచం గుర్తించేలోపు గొప్ప మనుషులు తమ కలలను నిశ్శబ్దంగా మోసుకెళ్లినట్టే, ఆమె కూడా తన కలలను మౌనంగా మోసుకెళ్లింది.",
+  "Chapter Two": "అధ్యాయం రెండు",
+  "The Dark Days — and the": "చీకటి రోజులు — మరియు",
+  "Light That Found Her": "ఆమెను చేరుకున్న వెలుగు",
+  "They said words meant to wound. They did not know who they were speaking to.": "వాళ్లు గాయపరచాలనే మాటలు మాట్లాడారు. కానీ ఎవరితో మాట్లాడుతున్నారో వాళ్లకు తెలియదు.",
+  "In her silence, she was already stronger than they knew": "ఆమె నిశ్శబ్దంలోనే వాళ్లు ఊహించలేని బలం దాగి ఉంది",
+  "When the time came for marriage proposals, the neighbours — small minds in a small town — decided her skin tone was the loudest thing about her. They said she was \"too dark.\" They said she would struggle. They turned her beauty into a wound. And for a time, she believed them.": "పెళ్లి సంబంధాల సమయం వచ్చినప్పుడు, చిన్న పట్టణంలోని చిన్న మనసులున్న పొరుగువాళ్లు ఆమె చర్మరంగాన్నే పెద్ద విషయంగా చేశారు. “చాలా నల్లగా ఉంది” అన్నారు. “జీవితం కష్టమవుతుంది” అన్నారు. ఆమె అందాన్ని ఒక గాయంగా మార్చేశారు. కొంతకాలం ఆమె కూడా ఆ మాటలను నమ్మింది.",
+  "\"She went quiet. That is what cruelty does — it doesn't just hurt you, it makes you doubt the mirror.\"": "“ఆమె మౌనంగా మారిపోయింది. క్రూరత్వం అలా చేస్తుంది — అది మనసును గాయపరచడమే కాదు, అద్దంలో కనిపించే మనల్ని కూడా అనుమానించేట్లు చేస్తుంది.”",
+  "She fell into a sadness that only those who have been told they are not enough can understand. But she did not stay there. She never stayed anywhere that didn't deserve her.": "తాము సరిపోమని ఎవరో చెప్పిన బాధను అనుభవించిన వాళ్లకే అర్థమయ్యే ఒక దిగులులో ఆమె మునిగిపోయింది. కానీ ఆమె అక్కడే నిలిచిపోలేదు. తన విలువను గుర్తించని చోట ఆమె ఎప్పుడూ ఉండలేదు.",
+  "She went to the city. And the city saw her differently. Neighbours there — people who had breathed wider air — looked at her and said simply:": "ఆమె నగరానికి వెళ్లింది. నగరం ఆమెను వేరేలా చూసింది. అక్కడి మనుషులు — పెద్ద మనసుతో చూసే వాళ్లు — ఆమెను చూసి సింపుల్‌గా చెప్పారు:",
+  "\"You are beautiful.\"": "“నువ్వు చాలా అందంగా ఉన్నావు.”",
+  "And they meant it. No footnote. No qualification. Just the truth.": "వాళ్లు నిజంగానే అలా అన్నారు. ఎలాంటి షరతులు లేకుండా. ఎలాంటి వివరణ లేకుండా. కేవలం నిజం మాత్రమే.",
+  "The depression lifted. Not all at once, but it lifted — like fog when the sun insists on itself.": "ఆ దిగులు మెల్లగా తొలిగింది. ఒక్కసారిగా కాదు. కానీ సూర్యుడు మబ్బులను తొలగించినట్టుగా, ఆమె జీవితం మళ్లీ వెలుగులోకి వచ్చింది.",
+  "Chapter Three": "అధ్యాయం మూడు",
+  "The Day She": "ఆమె తనను తాను",
+  "Saw Herself": "చూసుకున్న రోజు",
+  "A stranger with a camera told her what a hundred people had failed to say.": "కెమెరా పట్టుకున్న ఒక అపరిచితుడు, వందమంది చెప్పలేని నిజాన్ని ఆమెకు చూపించాడు.",
+  "One afternoon in the city, she walked into a photography studio. An ordinary day, an ordinary street. She sat before the lens, perhaps still carrying the echoes of unkind words.": "నగరంలో ఒక మధ్యాహ్నం, ఆమె ఒక ఫోటోగ్రఫీ స్టూడియోలోకి వెళ్లింది. సాధారణ రోజు, సాధారణ వీధి. కానీ ఆమె మనసులో ఇంకా ఆ కఠినమైన మాటల ప్రతిధ్వనులు ఉండి ఉండవచ్చు.",
+  "The photograph that knew her truth before she did": "ఆమె తన నిజాన్ని గుర్తించకముందే ఆ ఫోటో గుర్తించింది",
+  "The photographer developed the pictures and looked at them. Then he did something she did not expect: he": "ఫోటోగ్రాఫర్ ఫోటోలు డెవలప్ చేసి చూసాడు. ఆ తర్వాత ఆమె ఊహించని పని చేశాడు: అతను",
+  "framed her photographs and placed them in his studio window": "ఆమె ఫోటోలను ఫ్రేమ్ చేసి తన స్టూడియో కిటికీలో పెట్టాడు",
+  ". A display of beauty. Of someone worth showing to the world.": ". అది ఒక అందం ప్రదర్శన. ప్రపంచానికి చూపించదగిన ఒక మహిళ యొక్క చిత్రం.",
+  "\"He kept her pictures because she looked like a heroine. Because she did.\"": "“ఆమె హీరోయిన్‌లా కనిపించింది కాబట్టి అతను ఆమె ఫోటోలను పెట్టుకున్నాడు. ఎందుకంటే ఆమె నిజంగానే అలా కనిపించింది.”",
+  "— as remembered by her daughter": "— ఆమె కూతురు గుర్తుచేసుకున్నట్లు",
+  "In that moment, something shifted inside her. Not because a stranger validated her — but because she finally had permission to see what had always been true. The girl from the small town was, and had always been, radiant.": "ఆ క్షణంలో ఆమె లోపల ఏదో మారింది. ఒక అపరిచితుడు ఆమెను మెచ్చుకున్నందుకే కాదు — ఎప్పటినుంచో నిజమైన తన అందాన్ని తానే చూసుకునే అనుమతి ఆమెకు లభించింది. చిన్న పట్టణం నుండి వచ్చిన ఆ అమ్మాయి ఎప్పటినుంచో ప్రకాశించే అందం కలిగినదే.",
+  "She came home different. Unshakeable. The neighbours could say what they wanted now. She had seen herself — really seen herself — and that knowledge was hers to keep.": "ఆమె ఇంటికి మారిపోయిన మనసుతో వచ్చింది. ఇక ఎవరి మాటలకూ కదలని బలంతో. పొరుగువాళ్లు ఏం చెప్పాలనుకున్నా చెప్పవచ్చు. ఆమె తనను తాను నిజంగా చూసుకుంది — ఆ నిజం ఇక ఆమెదే.",
+  "Chapter Four": "అధ్యాయం నాలుగు",
+  "The Man Who": "ఆమె రంగును కాదు,",
+  "Never Saw Her Color": "ఆమె మనసును చూసిన మనిషి",
+  "He looked at her and saw everything that mattered.": "అతను ఆమెను చూసి నిజంగా ముఖ్యమైనదంతా చూశాడు.",
+  "The beginning of everything": "అన్నిటి ఆరంభం",
+  "Two people, one life": "ఇద్దరు మనుషులు, ఒక జీవితం",
+  "When the arranged marriage proposal arrived, he came with bright, fair skin and steady eyes. He saw her and liked her. Immediately. First sight.": "ఆరేంజ్డ్ మ్యారేజ్ సంబంధం వచ్చినప్పుడు, అతను తెల్లటి రంగుతో, స్థిరమైన చూపుతో వచ్చాడు. ఆమెను చూసి వెంటనే ఇష్టపడ్డాడు. మొదటి చూపులోనే.",
+  "Years later, she asked him gently — half teasing, half needing to know — why he had chosen her, knowing what the world had said about her complexion.": "సంవత్సరాల తర్వాత ఆమె అతనిని మృదువుగా అడిగింది — కొంచెం సరదాగా, కొంచెం తెలుసుకోవాలనే తపనతో — తన రంగు గురించి ప్రపంచం అలా మాట్లాడిందని తెలిసినా ఎందుకు తనను ఎంచుకున్నావని.",
+  "\"I never felt, not once, that you were dark. Colour has never mattered to me. Only the person. Only the heart inside.\"": "“నువ్వు నల్లగా ఉన్నావని నాకు ఒక్కసారి కూడా అనిపించలేదు. రంగు నాకు ఎప్పుడూ ముఖ్యం కాదు. మనిషి ముఖ్యం. లోపల ఉన్న హృదయం ముఖ్యం.”",
+  "— Her husband, her love": "— ఆమె భర్త, ఆమె ప్రేమ",
+  "And that was that. The neighbours' voices became smaller. The old wound, at last, closed over and became scar tissue — something that marks you without hurting you anymore.": "అంతే. పొరుగువాళ్ల మాటలు చిన్నవయ్యాయి. పాత గాయం చివరికి మానిపోయింది — అది గుర్తుగా మిగిలినా, ఇక నొప్పి పెట్టని గుర్తుగా మారింది.",
+  "Vegetarian": "శాకాహారి",
+  "Followed the Guru's teachings with her whole heart": "గురువు బోధనలను హృదయపూర్వకంగా అనుసరించింది",
+  "Gardener": "తోటమాలి",
+  "She planted life wherever she went — flowers, food, love": "ఆమె ఎక్కడికి వెళ్లినా జీవాన్ని నాటింది — పూలు, ఆహారం, ప్రేమ",
+  "Singer": "గాయని",
+  "A voice that fills a room long after the song ends": "పాట ముగిసిన తర్వాత కూడా గది నిండా మిగిలే స్వరం",
+  "Seamstress": "కుట్టు కళాకారిణి",
+  "She stitched beautiful clothes for her daughters by hand": "తన కూతుళ్ల కోసం అందమైన బట్టలను చేతులతో కుట్టింది",
+  "Chapter Five": "అధ్యాయం ఐదు",
+  "The Guru's Light,": "గురువు వెలుగు,",
+  "the Garden's Gifts": "తోట ఇచ్చిన వరాలు",
+  "She found a path of peace — and walked it with her husband, hand in hand.": "ఆమె ప్రశాంతత దారి కనుగొంది — తన భర్తతో చేతిలో చేయి వేసుకుని ఆ దారిలో నడిచింది.",
+  "Where she found her stillness": "ఆమెకు ప్రశాంతత దొరికిన స్థలం",
+  "Together, she and her husband found His Holiness Sri Ganapathy Sacchidananda Swamiji as their spiritual guide. The guru's teachings changed something in her — she gave up meat entirely, embraced a gentler way of living, and found in devotion a quiet, daily joy.": "ఆమె మరియు ఆమె భర్త కలిసి శ్రీ గణపతి సచ్చిదానంద స్వామీజీని తమ ఆధ్యాత్మిక గురువుగా స్వీకరించారు. గురువు బోధనలు ఆమెను మార్చాయి — ఆమె పూర్తిగా మాంసాహారం మానేసి, మరింత మృదువైన జీవన విధానాన్ని స్వీకరించింది. భక్తిలో ఆమె రోజువారీ ప్రశాంత ఆనందాన్ని కనుగొంది.",
+  "Her home became a place of growth — literally. She planted food in the soil, tended flowers that had no agenda but to bloom. She stitched dresses for her daughters with her own hands, turning cloth into love. She sang. She cooked. She made something out of almost nothing, month after month, stretching her husband's modest salary until it became enough, and then some.": "ఆమె ఇల్లు నిజంగానే ఎదుగుదలతో నిండిన స్థలమైంది. నేలలో ఆహారాన్ని నాటింది, పూయడమే తెలిసిన పూలను చూసుకుంది. తన చేతులతో కూతుళ్లకు దుస్తులు కుట్టింది, వస్త్రాన్ని ప్రేమగా మార్చింది. ఆమె పాడింది. వండింది. తక్కువలో ఎక్కువ చేసింది. నెలనెలా భర్త సాధారణ జీతాన్ని సరిపడేలా, ఇంకా ఎక్కువగా అనిపించేలా మార్చింది.",
+  "They never looked poor. Not because they had money. Because she had": "వాళ్లు ఎప్పుడూ పేదలలా కనిపించలేదు. డబ్బు ఉన్నందుకు కాదు. ఆమె దగ్గర",
+  "grace": "గౌరవం, సౌమ్యత, అందం",
+  ".": ".",
+  "Chapter Six": "అధ్యాయం ఆరు",
+  "The Mother —": "తల్లి —",
+  "Two Beautiful Girls": "ఇద్దరు అందమైన కూతుళ్లు",
+  "She did not raise daughters. She raised women.": "ఆమె కేవలం కూతుళ్లను పెంచలేదు. బలమైన మహిళలను తీర్చిదిద్దింది.",
+  "The beginning of her greatest chapter": "ఆమె జీవితంలోని గొప్ప అధ్యాయం ప్రారంభం",
+  "Her whole heart, in one frame": "ఆమె హృదయం మొత్తం ఒకే ఫ్రేమ్‌లో",
+  "First came one daughter — beautiful. Three years later, another — equally beautiful. Her family was complete.": "మొదట ఒక కూతురు వచ్చింది — అందంగా. మూడు సంవత్సరాల తర్వాత ఇంకొక కూతురు — అదే అందంతో. ఆమె కుటుంబం సంపూర్ణమైంది.",
+  "She raised them without ever raising a hand. She raised them with books and soft voices, with homemade clothes and home-cooked meals, with the belief that education was the one thing no one could ever take away from a woman. She drove that belief into her daughters the only way she knew — by loving them completely and trusting them wholly.": "ఆమె ఎప్పుడూ చేయి ఎత్తకుండా వారిని పెంచింది. పుస్తకాలతో, మృదువైన మాటలతో, ఇంట్లో కుట్టిన బట్టలతో, ఇంటి వంటలతో పెంచింది. ఒక మహిళ దగ్గర నుంచి ఎవరూ తీసుకోలేని గొప్ప సంపద చదువే అని ఆమె నమ్మింది. ఆ నమ్మకాన్ని తన కూతుళ్లలో నింపింది — పూర్తిగా ప్రేమించడం ద్వారా, పూర్తిగా నమ్మడం ద్వారా.",
+  "\"She never beat us. She never had to. Her love was enough to make us want to become better.\"": "“ఆమె మమ్మల్ని ఎప్పుడూ కొట్టలేదు. అవసరం కూడా రాలేదు. ఆమె ప్రేమే మమ్మల్ని మంచి వాళ్లుగా మారాలనిపించింది.”",
+  "— Her daughter": "— ఆమె కూతురు",
+  "Both daughters graduated. Both are now studying abroad for their masters degrees. She sent them into the world with everything they needed and asked for nothing in return — except that they live well and be free.": "ఇద్దరు కూతుళ్లు గ్రాడ్యుయేట్ అయ్యారు. ఇప్పుడు ఇద్దరూ మాస్టర్స్ కోసం విదేశాల్లో చదువుతున్నారు. వాళ్లకు అవసరమైన ప్రతిదీ ఇచ్చి ప్రపంచంలోకి పంపింది. ప్రతిఫలంగా ఏమీ అడగలేదు — వాళ్లు బాగా జీవించాలి, స్వేచ్ఛగా ఉండాలి అనేదొక్కటే కోరుకుంది.",
+  "Chapter Seven": "అధ్యాయం ఏడు",
+  "The Storm —": "తుఫాను —",
+  "and the Miracle": "మరియు అద్భుతం",
+  "She has faced the worst that life can offer. She is still here.": "జీవితం ఇవ్వగలిగిన అత్యంత కఠినమైన పరీక్షలను ఆమె ఎదుర్కొంది. అయినా ఆమె ఇంకా నిలబడి ఉంది.",
+  "Proof that she is still here. That she won.": "ఆమె ఇంకా ఇక్కడే ఉందనే సాక్ష్యం. ఆమె గెలిచిందనే నిదర్శనం.",
+  "During her daughter's B.Tech years, the illness came. What began as symptoms became a diagnosis that stole the air from the room:": "తన కూతురు బీటెక్ చదువుతున్న రోజుల్లో, అనారోగ్యం వచ్చింది. చిన్న లక్షణాలుగా మొదలైనది, గదిలోని గాలినే ఆపేసినట్టుగా అనిపించిన ఒక నిర్ధారణగా మారింది:",
+  "liver cirrhosis": "లివర్ సిరోసిస్",
+  ". The doctors spoke plainly. Only a transplant would save her.": ". డాక్టర్లు స్పష్టంగా చెప్పారు. ట్రాన్స్‌ప్లాంట్ మాత్రమే ఆమెను కాపాడగలదు.",
+  "For an entire year she suffered — with a patience and endurance that cannot be put into words, only witnessed. The family held together. Somehow, through prayer and search and the grace of a stranger's generosity, a donor was found.": "ఒక సంవత్సరం పాటు ఆమె బాధపడింది — మాటల్లో చెప్పలేని ఓర్పుతో, తట్టుకునే శక్తితో. కుటుంబం కలిసి నిలిచింది. ప్రార్థనలతో, వెతుకులాటతో, ఒక అపరిచితుడి దాతృత్వ కృపతో చివరికి దాత దొరికారు.",
+  "\"The pain she went through during this process is not explainable. It is only survivable. And she survived it.\"": "“ఈ ప్రక్రియలో ఆమె అనుభవించిన బాధను మాటల్లో చెప్పలేం. దాన్ని తట్టుకోవడమే సాధ్యం. ఆమె తట్టుకుంది.”",
+  "The surgery was a success. Her new liver took. Her body, tested beyond what any body should be tested, chose to keep living. By the blessings of God and the skill of doctors and the sheer will of a woman who was not finished yet, she came through.": "శస్త్రచికిత్స విజయవంతమైంది. కొత్త లివర్ ఆమె శరీరం స్వీకరించింది. ఎవరూ ఎదుర్కోకూడని పరీక్షలను ఎదుర్కొన్న ఆమె శరీరం, ఇంకా జీవించాలనే నిర్ణయం తీసుకుంది. దేవుని ఆశీర్వాదం, వైద్యుల నైపుణ్యం, ఇంకా ముగియని ఒక మహిళ యొక్క సంకల్పబలం వల్ల ఆమె బయటపడింది.",
+  "She calls it a second birth. She is right. And she faced even that — perhaps the most terrifying thing a person can face — and came out the other side": "ఆమె దాన్ని రెండో జన్మ అంటుంది. ఆమె చెప్పేది నిజమే. మనిషి ఎదుర్కోగలిగే అత్యంత భయంకరమైన పరిస్థితినీ ఆమె ఎదుర్కొని, మరో వైపు",
+  "not broken, but more whole than ever.": "విరిగిపోకుండా, ఇంతకంటే సంపూర్ణంగా బయటకు వచ్చింది.",
+  "Chapter Eight": "అధ్యాయం ఎనిమిది",
+  "Now —": "ఇప్పుడు —",
+  "Living, Dreaming, Shining": "జీవిస్తూ, కలలు కంటూ, వెలుగుతూ",
+  "Her daughters are across the ocean. Her heart is everywhere they are.": "ఆమె కూతుళ్లు సముద్రం ఆవల ఉన్నా, ఆమె హృదయం వాళ్లు ఉన్న ప్రతి చోట ఉంటుంది.",
+  "Today. Strong. Peaceful. Still blooming.": "ఈరోజు. బలంగా. ప్రశాంతంగా. ఇంకా వికసిస్తూ.",
+  "Today, she lives in a village with her husband. The house is quiet in a different way now — the girls are gone to chase their futures, and she is proud of every mile of the distance. She tends her plants. She sings. She cooks meals and fills the house with the smells that will always mean": "ఈరోజు ఆమె తన భర్తతో కలిసి గ్రామంలో జీవిస్తోంది. ఇప్పుడు ఇల్లు వేరేలా నిశ్శబ్దంగా ఉంది — కూతుళ్లు తమ భవిష్యత్తుల కోసం దూరంగా వెళ్లారు. ఆ దూరంలోని ప్రతి మైలుపై ఆమెకు గర్వం ఉంది. ఆమె మొక్కలను చూసుకుంటుంది. పాడుతుంది. వంట చేస్తుంది. ప్రపంచంలో ఎక్కడ ఉన్నా ఆమె కూతుళ్లకు ఎప్పుడూ",
+  "home": "ఇల్లు",
+  "to her daughters, no matter where in the world they are standing.": "అనిపించే వాసనలతో ఇంటిని నింపుతుంది.",
+  "She has been through everything. The small town that couldn't see her. The depression. The transplant. The loneliness of an empty nest. And she faces it all with the same quiet steadiness she has always carried.": "ఆమె అన్నిటినీ చూసింది. ఆమెను గుర్తించని చిన్న పట్టణాన్ని. దిగులును. ట్రాన్స్‌ప్లాంట్‌ను. పిల్లలు దూరంగా వెళ్లిన తర్వాతి ఒంటరితనాన్ని. అయినా ఆమె ఎప్పటిలాగే నిశ్శబ్దమైన స్థిరత్వంతో అన్నిటినీ ఎదుర్కొంటుంది.",
+  "\"She is really a strong woman! She is a rockstar.\"": "“ఆమె నిజంగా చాలా బలమైన మహిళ! ఆమె ఒక రాక్‌స్టార్.”",
+  "— Her daughter, who has been watching closely all along": "— మొదటి నుంచీ ఆమెను దగ్గరగా చూస్తున్న కూతురు",
+  "She is, above all, a woman who loved without conditions — who gave everything and asked only that her daughters be free. That is a kind of greatness the world rarely names. But her daughters know. They always will.": "అన్నిటికంటే ముందుగా, ఆమె షరతుల్లేకుండా ప్రేమించిన మహిళ — అన్నీ ఇచ్చి, తన కూతుళ్లు స్వేచ్ఛగా ఉండాలని మాత్రమే కోరుకుంది. ప్రపంచం తరచుగా పేరు పెట్టని గొప్పతనం అది. కానీ ఆమె కూతుళ్లకు తెలుసు. ఎప్పటికీ తెలుసు.",
+  "A Letter From Your Daughter · Mother's Day": "నీ కూతురు నుండి ఒక లేఖ · మదర్స్ డే",
+  "To the woman who made me brave by being brave first.": "ముందుగా ధైర్యంగా నిలబడి, నన్నూ ధైర్యంగా మార్చిన మహిళకు.",
+  "Amma,": "అమ్మా,",
+  "You taught me what strength looks like — not the kind that shouts, but the kind that shows up every single day. The kind that stitches a dress when there is no money for the shop. The kind that plants a garden when the world feels barren. The kind that survives a surgery that should have broken someone and comes home and still makes your family feel safe.": "బలం అంటే ఎలా ఉంటుందో నువ్వు నాకు నేర్పించావు — గట్టిగా అరుచుకునే బలం కాదు, ప్రతి రోజూ నిలబడే బలం. దుకాణంలో కొనడానికి డబ్బు లేకపోయినా దుస్తులు కుట్టే బలం. ప్రపంచం బీడుగా అనిపించినా తోట నాటే బలం. ఎవ్వరినైనా విరగగొట్టే శస్త్రచికిత్సను తట్టుకుని, ఇంటికి వచ్చి కుటుంబానికి మళ్లీ భద్రతగా అనిపించే బలం.",
+  "Those neighbours who said you were not beautiful — they were wrong. They will always have been wrong. You are the kind of beautiful that does not need anyone's permission. A photographer who had seen thousands of faces put yours in his window. Your husband looked at you once and never looked away. And I have spent my whole life watching you and thinking:": "నువ్వు అందంగా లేవని అన్న ఆ పొరుగువాళ్లు తప్పు చెప్పారు. వాళ్లు ఎప్పటికీ తప్పే. నీ అందానికి ఎవరి అనుమతి అవసరం లేదు. వేల ముఖాలు చూసిన ఫోటోగ్రాఫర్ నీ ఫోటోను తన కిటికీలో పెట్టాడు. నీ భర్త నిన్ను ఒకసారి చూసి, ఆ తర్వాత ఎప్పుడూ దూరంగా చూడలేదు. నేను నా జీవితమంతా నిన్ను చూస్తూ ఒకటే అనుకున్నాను:",
+  "I want to be like her.": "నేను ఆమెలా ఉండాలి.",
+  "Thank you for never beating us when you easily could have. For cooking and singing and growing things and making a small salary feel like abundance. For sending us far away even though it must have cost you something every day. For surviving. For choosing to keep living.": "మమ్మల్ని కొట్టడానికి ఎన్నో సందర్భాలు ఉన్నా ఎప్పుడూ కొట్టనందుకు ధన్యవాదాలు. వండి, పాడి, మొక్కలు పెంచి, చిన్న జీతాన్ని కూడా సమృద్ధిగా అనిపించించినందుకు ధన్యవాదాలు. ప్రతిరోజూ నీకు కష్టమైనా మమ్మల్ని దూరంగా చదవడానికి పంపినందుకు ధన్యవాదాలు. బతికి నిలిచినందుకు. జీవించడాన్ని ఎంచుకున్నందుకు.",
+  "I love you more than I know how to say. You are my greatest inspiration. Every single day.": "మాటల్లో చెప్పలేనంతగా నేను నిన్ను ప్రేమిస్తున్నాను. నువ్వే నా గొప్ప ప్రేరణ. ప్రతి ఒక్క రోజు.",
+  "Happy Mother's Day, Amma. This one is for you.": "హ్యాపీ మదర్స్ డే అమ్మా. ఇది నీకోసమే.",
+  "— Your Daughter, with all my love 🌸": "— నీ కూతురు, నా ప్రేమంతా నీకే 🌸",
+  "Made with love · For Amma · Mother's Day 2026": "ప్రేమతో తయారు చేయబడింది · అమ్మ కోసం · మదర్స్ డే 2026"
+};
+
+const translatableTextNodes = [];
+
+function collectTextNodes(root) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const parent = node.parentElement;
+      if (!parent) return NodeFilter.FILTER_REJECT;
+      if (parent.closest('script, style, .lang-toggle')) return NodeFilter.FILTER_REJECT;
+      if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    translatableTextNodes.push({
+      node,
+      en: node.nodeValue,
+      key: node.nodeValue.trim()
+    });
+  }
+}
+
+function setLanguage(lang) {
+  document.documentElement.lang = lang === 'te' ? 'te' : 'en';
+  document.body.classList.toggle('telugu-mode', lang === 'te');
+
+  translatableTextNodes.forEach(item => {
+    const leading = item.en.match(/^\s*/)[0];
+    const trailing = item.en.match(/\s*$/)[0];
+    const translated = translations[item.key];
+    item.node.nodeValue = lang === 'te' && translated ? leading + translated + trailing : item.en;
+  });
+
+  document.title = lang === 'te' ? translations['To My Amma — A Life in Full Bloom'] : 'To My Amma — A Life in Full Bloom';
+  document.getElementById('englishLabel').classList.toggle('active', lang === 'en');
+  document.getElementById('teluguLabel').classList.toggle('active', lang === 'te');
+}
+
+collectTextNodes(document.body);
+const languageToggle = document.getElementById('languageToggle');
+languageToggle.addEventListener('change', function () {
+  setLanguage(this.checked ? 'te' : 'en');
+});
+setLanguage('en');
+
 </script>
 </body>
 </html>
